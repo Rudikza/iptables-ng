@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: iptables-ng
+# Cookbook:: iptables-ng
 # Library:: matchers
 #
-# Copyright 2014, Dan Fruehauf
+# Copyright:: 2014, Dan Fruehauf
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

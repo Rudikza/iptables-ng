@@ -14,18 +14,18 @@ describe 'iptables-ng::default' do
   it 'should apply rules from node definition' do
     expect(chef_run).to create_iptables_ng_rule('test1-filter-INPUT-attribute-rule')
       .with(
-        chain:      'INPUT',
-        table:      'filter',
-        rule:       '--protocol tcp --dport 22 --match state --state NEW --jump ACCEPT',
-        ip_version: [4, 6],
+        chain: 'INPUT',
+        table: 'filter',
+        rule: '--protocol tcp --dport 22 --match state --state NEW --jump ACCEPT',
+        ip_version: [4, 6]
       )
 
     expect(chef_run).to create_iptables_ng_rule('test2-filter-INPUT-attribute-rule')
       .with(
-        chain:      'INPUT',
-        table:      'filter',
-        rule:       '--protocol tcp --dport 80 --match state --state NEW --jump DROP',
-        ip_version: 4,
+        chain: 'INPUT',
+        table: 'filter',
+        rule: '--protocol tcp --dport 80 --match state --state NEW --jump DROP',
+        ip_version: 4
       )
   end
 end
