@@ -10,9 +10,9 @@ install: echo "skip bundle install"
 env:
   - CHEF_LICENSE=accept
 
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - master
 
 services: docker
 
