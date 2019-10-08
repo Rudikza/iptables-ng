@@ -12,12 +12,12 @@ provisioner:
   # product_version: 13 # default is 'latest', uncomment to test old Chef version
 
 platforms:
-- name: ubuntu-16.04
-- name: ubuntu-18.04
-- name: debian-8
-- name: debian-9
+# - name: ubuntu-16.04
+# - name: ubuntu-18.04
+# - name: debian-8
+# - name: debian-9
 - name: centos-6
-- name: centos-7
+# - name: centos-7
 
 suites:
   - name: lwrp_chain_create_default
